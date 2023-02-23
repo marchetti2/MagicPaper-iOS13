@@ -11,7 +11,7 @@ import SceneKit
 import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
-
+    
     @IBOutlet var sceneView: ARSCNView!
     
     override func viewDidLoad() {
@@ -38,7 +38,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             configuration.maximumNumberOfTrackedImages = 1
             
         }
-
+        
         // Run the view's session
         sceneView.session.run(configuration)
     }
@@ -49,7 +49,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Pause the view's session
         sceneView.session.pause()
     }
-
+    
     // MARK: - ARSCNViewDelegate
     
     
